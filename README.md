@@ -1,5 +1,7 @@
 # Proyecto de versionamiento
+   [![N|Solid](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/brain.png)](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/moon.png)
 ## _Tecnologias utilizadas_
+
 
 [![N|Solid](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/node.jpg)](https://nodejs.org/dist/v18.17.1/node-v18.17.1-x64.msi)    [![N|Solid](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/html.jpg)](https://nodejs.org/en/download)  [![N|Solid](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/npm.jpg)](https://www.npmjs.com/) [![N|Solid](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/oracle.jpg)](https://download.oracle.com/otn_software/nt/instantclient/2110000/instantclient-basic-windows.x64-21.10.0.0.0dbru.zip) [![N|Solid](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/torto.png)](https://tortoisesvn.net/downloads.html) [![N|Solid](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/electron.jpg)](https://electronjs.org/es/) [![N|Solid](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/subversion.png)](https://subversion.apache.org/) 
 
@@ -53,7 +55,7 @@ npm i -- Instala las dependencias necesarias
 6. Despues de esto se deben realizar varias verificaciones para asegurar que este funcionando bien, ejecutar los siguientes pasos.
 Abrir el cmd y ejecutar el siguiente comando.
 ```sh
-netstat -ano | findstr 3000 -- No debe devolver nada
+netstat -ano | findstr 3000 -- No debe devolver nada,  no de ser asi hablar con el desarrollador
 ```
 Volver a vscode y a la terminal y ejecitar el siguiente comando.
 ```sh
@@ -63,6 +65,11 @@ Luego
 ```sh
 node backend.js -- Debe devolver un aviso de que se esta ejecutando en el puerto 3000
 ```
+Y volver abrir el cmd y ejecutar el siguiente comando.
+```sh
+netstat -ano | findstr 3000 -- Debe devolver algo, de no ser asi hablar con el desarrollador
+```
+En caso de que todo funcione bien
 8. 
 
 
