@@ -27,6 +27,43 @@
 ## Installation
 1. Descargar el codigo del repositorio.
 2. Crear una carpeta y utilizando tortoisse hacer esa carpeta un repositorio.
-3. En la carpeta que se genera con el nombre hooks ingresar y pasar los archivos descargados del repositorio a esta carpeta, se debe ver de esta forma.
+3. En la carpeta que se genera con el nombre hooks ingresar y pasar los archivos descargados del repositorio a esta carpeta, se debe ver de esta forma, excepto por el archivo de pruebas que no es necesario.
+
+[![N|Solid](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/conf.png)](https://github.com/luisml03/proyecto_ada_tor/blob/main/assets/conf.png).
+
+4. Luego de tener el codigo del repositorio en la carpeta hooks, abrir la carpeta hooks en vscode o el editor elegido y ejecutar los siguientes comandos.
+```sh
+CONTROL + BLOCK MAYUS + Ñ -- Abre la terminal
+```
+Ejecutar el siguiente comando en la consola.
+```sh
+npm install oracledb@4.2.0 -- instala la ultima version compatible con oracle 11g
+npm i -- Instala las dependencias necesarias
+```
+Luego
+```sh
+cd ventana -- Cambiar de carpeta
+```
+y
+```sh
+npm install oracledb@4.2.0 -- instala la ultima version compatible con oracle 11g
+npm i -- Instala las dependencias necesarias
+```
+5. Esto generara una carpeta llamada node_modules y dos archivos package en cada carpeta(hooks y ventana), pero es algo normal.
+6. Despues de esto se deben realizar varias verificaciones para asegurar que este funcionando bien, ejecutar los siguientes pasos.
+Abrir el cmd y ejecutar el siguiente comando.
+```sh
+netstat -ano | findstr 3000 -- No debe devolver nada
+```
+Volver a vscode y a la terminal y ejecitar el siguiente comando.
+```sh
+cd ventana -- Si no estas en la carpeta ventana
+```
+Luego
+```sh
+node backend.js -- Debe devolver un aviso de que se esta ejecutando en el puerto 3000
+```
+8. 
+
 
   
