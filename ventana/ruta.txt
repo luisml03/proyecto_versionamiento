@@ -1,0 +1,1 @@
+http://adacsc.co:1443/svn/repository/ADA/SICOF/Documentos/Desarrollos/PowerBuilder/ScriptsDB/Branches/App/
