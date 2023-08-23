@@ -9,13 +9,13 @@ body{
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url('land2.jpg') no-repeat;
+  background: url('./assets/land2.jpg') no-repeat;
   background-size: cover;
   background-position: center;
 }
 .wrapper{
   position: relative;
-  width: 500px;
+  width: 550px;
   height: 490px;
   background: transparent;
   border: 2px solid rgba(255, 255, 255, .5);
@@ -66,14 +66,14 @@ a:hover {
 .logo {
   height: 42px;
   width: 150px;
-  background: url('logo6.png') no-repeat;
+  background: url('./assets/logo6.png') no-repeat;
   animation: latir 2s linear infinite ; 
 }
 
 .myLogo{
   height: 91px;
   width: 100px;
-  background: url('logod3.png') no-repeat;
+  background: url('./assets/logod3.png') no-repeat;
   align-items: center;
   margin-left: 90px;
   margin-bottom: 150px;
@@ -138,14 +138,25 @@ input {
   padding-bottom: 10px;
 }
 
-.input-s{
+.input_mess_n{
+  height: 100px;
   width: 300px;
-  margin-left: 75px;
+  padding-bottom: 10px;
+  margin-left: 58px;
+}
+.input-f{
+  width: 300px;
+  
+}
+
+.input-t{
+  width: 300px;
+ margin-left: 20px;
 }
 
 .input-v{
   width: 300px;
-  margin-left: 22px;
+  margin-left: 40px;
 }
 @keyframes latir {
   0% {
