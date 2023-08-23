@@ -7,13 +7,17 @@ formA.addEventListener("submit", async function(event){
   const vs = formA.querySelector('#version').value;
   const sf = formA.querySelector('#sfversion').value;
   const ms = formA.querySelector('#message').value;
+  const st = formA.querySelector('#stecnica').value;
+  const dt = formA.querySelector('#descripcion').value;
 
  
   // Crear un objeto con los datos a enviar
   const data = {
     version: vs,
     sfversion: sf,
-    message: ms
+    message: ms,
+    stecnica: st,
+    descripcion: dt
    
   };
 
