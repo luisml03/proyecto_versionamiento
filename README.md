@@ -69,8 +69,10 @@ Y volver abrir el cmd y ejecutar el siguiente comando.
 ```sh
 netstat -ano | findstr 3000 -- Debe devolver algo, de no ser asi hablar con el desarrollador
 ```
-En caso de que todo funcione bien
-8. 
+En caso de que todo funcione bien.
+
+8. Luego de esto se deben configurar los hooks apuntando al repositorio en el que se desea implementar la funcionalidad, se preparo un video para esto, asi que aqui comparto el [enlace](https://drive.google.com/file/d/1IErreVaCkDYavLUN9cMUXLgdkDAj1hle/view?usp=drivesdk).
+9.  Por ultimo se debe validar recuerda que se debe validar que tanto el client x64 de oracle como el node js este agregados en las variables e entorno
 
 
   
