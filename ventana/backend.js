@@ -21,7 +21,7 @@ const commit_id = parseInt(commitId) + 1;
 
 // Ruta para insertar datos
 app.post('/insertData', async (req, res) => {
-    const { version, sfversion, message, cbool } = req.body;
+    const { version, sfversion, message, stecnica, descripcion } = req.body;
     
     try {
         const connection = await oracledb.getConnection({
@@ -30,8 +30,8 @@ app.post('/insertData', async (req, res) => {
           connectString: '10.1.140.101:1521/db106'
         });
 insertDataSent = true
-        const sql = `INSERT INTO TALENTO.VERSIONES (commit_id, sfversion, version, message) VALUES (:commit_id, :sfversion, :version, :message)`;
-        const binds = { commit_id, version, sfversion, message };
+        const sql = `INSERT INTO TALENTO.VERSIONES (commit_id, sfversion, version, message, stecnica, descripcion) VALUES (:commit_id, :sfversion, :version, :message, :stecnica, :descripcion)`;
+        const binds = { commit_id, version, sfversion, message, stecnica, descripcion };
 
         const result = await connection.execute(sql, binds, { autoCommit: true });
         await connection.close();
