@@ -72,7 +72,8 @@ netstat -ano | findstr 3000 -- Debe devolver algo, de no ser asi hablar con el d
 En caso de que todo funcione bien.
 
 8. Luego de esto se deben configurar los hooks apuntando al repositorio en el que se desea implementar la funcionalidad, se preparo un video para esto, asi que aqui comparto el [enlace](https://drive.google.com/file/d/1IErreVaCkDYavLUN9cMUXLgdkDAj1hle/view?usp=drivesdk).
-9.  Por ultimo se debe validar recuerda que se debe validar que tanto el client x64 de oracle como el node js este agregados en las variables e entorno
+9.  Por ultimo se debe validar recuerda que se debe validar que tanto el client x64 de oracle como  node js esten agregados en las variables e entorno y tener instalado la linea de comandos de tortoisseSvn (obligatorio).
+10.  Se debe setear la ruta del repositorio también en el codigo ya que este extrae la información directamente del svnserver, este se debe setear en el archivo take_commit y el archivo backend.js, tener en cuenta que tambíen se deben setear las rutas en el post y pre commit, dependiendo de como organizes la carpeta, crear la carpeta repositorio en la ruta C:, recomendablemente.
 
 
   
